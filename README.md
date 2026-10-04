@@ -1,6 +1,6 @@
 # ClimbEdge Blog
 
-https://climbedge.github.io — Send harder. Train wiser.
+https://climbedge.github.io — Many experts. One edge.
 
 여러 클라이머·코치의 영상과 자료를 **주제별로 교차 분석**해 정리하는 블로그. 글이 원본이고, 글을 바탕으로 YouTube(@climbedge) 영상을 만든다.
 

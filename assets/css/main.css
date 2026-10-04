@@ -46,3 +46,4 @@ h1,h2,h3{letter-spacing:-.02em;line-height:1.35}
 .tags span{display:inline-block;margin:4px 8px 0 0;font-size:13px;color:var(--muted)}
 .site-footer{border-top:1px solid var(--line);padding:28px 0;font-size:14px}
 @media (max-width:600px){body{font-size:16px}.hero h1{font-size:42px}.post-head h1{font-size:27px}.site-header nav a{margin-left:12px}}
+.hero .intro{color:var(--muted);font-size:17px;margin:2px 0 14px}

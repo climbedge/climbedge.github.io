@@ -5,7 +5,8 @@ permalink: /about/
 ---
 # ClimbEdge 소개
 
-**Send harder. Train wiser.**
+**Many experts. One edge.**  
+*Top climbers and coaches, compared and distilled — one topic at a time.*
 
 ClimbEdge는 세계적인 클라이머·코치들의 영상과 연구를 **주제별로 모아 교차 분석**합니다.
 한 명의 영상을 그대로 번역하지 않습니다. 예를 들어 '오픈그립'을 다룬다면, 그 주제를 다룬 여러 사람의 영상과 자료를 함께 보고 정리합니다.
