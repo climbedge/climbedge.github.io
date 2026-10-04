@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-head">
+    <p class="kicker">{% if page.axis %}<span class="axis axis-{{ page.axis }}">{{ site.axes[page.axis] }}</span>{% endif %}{% if page.topic %} · {{ page.topic }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="summary">{{ page.summary }}</p>{% endif %}
+    <p class="meta">{{ page.date | date: "%Y.%m.%d" }}{% if page.sources %} · 참고 자료 {{ page.sources | size }}개{% endif %}</p>
+  </header>
+  {% if page.video and page.video.youtube %}
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{{ page.video.youtube }}" title="{{ page.title }}" allowfullscreen loading="lazy"></iframe></div>
+  {% endif %}
+  <div class="content">{{ content }}</div>
+  {% if page.sources %}
+  <section class="sources">
+    <h2>출처</h2>
+    <ol>
+    {% for s in page.sources %}
+      <li><strong>{{ s.creator }}</strong> — <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.note %} <span class="muted">({{ s.note }})</span>{% endif %}</li>
+    {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+  {% if page.tags and page.tags.size > 0 %}<p class="tags">{% for t in page.tags %}<span>#{{ t }}</span>{% endfor %}</p>{% endif %}
+</article>

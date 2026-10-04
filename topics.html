@@ -1,0 +1,18 @@
+---
+layout: default
+title: 주제
+permalink: /topics/
+---
+<h1>주제별 모아보기</h1>
+{% for ax in site.axes %}
+<section class="list">
+  <h2><span class="axis axis-{{ ax[0] }}">{{ ax[1] }}</span></h2>
+  {% assign ps = site.posts | where: "axis", ax[0] %}
+  {% if ps.size == 0 %}<p class="empty">아직 글이 없어요.</p>{% else %}
+  {% assign groups = ps | group_by: "topic" %}
+  {% for g in groups %}
+    <h3>{{ g.name }}</h3>
+    <ul class="compact">{% for p in g.items %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <span class="muted">{{ p.date | date: "%Y.%m.%d" }}</span></li>{% endfor %}</ul>
+  {% endfor %}{% endif %}
+</section>
+{% endfor %}

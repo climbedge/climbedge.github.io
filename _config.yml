@@ -1,0 +1,25 @@
+title: ClimbEdge
+tagline: Send harder. Train wiser.
+description: 세계적인 클라이머·코치들의 영상과 연구를 주제별로 모아 교차 분석하는 클라이밍 블로그. 피지컬과 테크니컬, 두 축으로 더 높은 그레이드를 더 현명하게.
+url: https://climbedge.github.io
+baseurl: ""
+lang: ko
+timezone: Asia/Seoul
+permalink: /:year/:month/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+image: /assets/img/og.png
+youtube: https://www.youtube.com/@climbedge
+axes:
+  physical: 피지컬
+  technical: 테크니컬
+exclude:
+  - README.md
+  - templates/
+  - Gemfile
+  - Gemfile.lock
